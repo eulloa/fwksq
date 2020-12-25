@@ -6,7 +6,7 @@ import styles from './layout.module.scss';
 export const siteTitle = 'FWKSQ';
 
 interface LayoutProps {
-   children?: React.Node;
+   children?: React.ReactNode;
    home?: boolean;
 }
 
