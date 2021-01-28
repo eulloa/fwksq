@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Link from 'next/link';
-import styles from '../styles/Home.module.scss'
 import Layout from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
 
@@ -33,7 +32,7 @@ export default function Index({ posts }: IndexProps) {
           ))}
         </ul>
       }
-      <footer className={styles.footer}></footer>
+      <footer></footer>
     </Layout>
   )
 }
