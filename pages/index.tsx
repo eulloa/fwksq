@@ -20,8 +20,7 @@ export default function Index({ posts }: IndexProps) {
         <title>FWKSQ</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <img src="/images/kev.jpg" alt="Kev" />
-      {posts && posts.length > 0 &&
+      {posts?.length > 0 &&
         <ul>
           {posts.map(({ id, date, title }) => (
             <li key={`${date}-${title}`}>
@@ -32,7 +31,6 @@ export default function Index({ posts }: IndexProps) {
           ))}
         </ul>
       }
-      <footer></footer>
     </Layout>
   )
 }
