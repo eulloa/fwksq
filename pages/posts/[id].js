@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Layout from '../../components/layout';
 import { getAllPostIds, getPostData } from '../../lib/posts';
-// import FormatDate from '../../components/formatDate';
 
 export default function Post({ postData }) {
   return (
@@ -9,11 +8,11 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <div className="flex justify-center">
+      <div>
         <article>
-          <h1 className="font-semibold">{postData.title}</h1>
           <div>
-            {/* <FormatDate dateString={postData.date} /> */}
+            <h1 className="font-semibold">{postData.title}</h1>
+            <p>{postData.date}</p>
           </div>
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </article>

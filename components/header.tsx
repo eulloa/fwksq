@@ -6,7 +6,6 @@ export default function Header() {
          <Link href="/"><a href="#"><img src="/images/kev.jpg" alt="Kev" /></a></Link>
          <div className="flex justify-end w-full">
             <ul className="flex space-x-5">
-               <li><Link href="/blog"><a href="#">Blog</a></Link></li>
                <li><Link href="/fitness"><a href="#">Fitness</a></Link></li>
                <li><Link href="/investing"><a href="#">Investing</a></Link></li>
             </ul>
