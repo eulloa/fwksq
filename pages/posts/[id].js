@@ -8,15 +8,16 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <div>
-        <article>
-          <div>
-            <h1 className="font-semibold">{postData.title}</h1>
-            <p>{postData.date}</p>
-          </div>
-          <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-        </article>
-      </div>
+      <article>
+        <div>
+          <h1 className="text-2xl font-bold text-center">{postData.title}</h1>
+          <p className="text-sm font-light pb-5 text-center">{postData.date}</p>
+        </div>
+        <div
+          className="blog-content font-light"
+          dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+        />
+      </article>
     </Layout>
   );
 }

@@ -2,9 +2,9 @@ import Link from 'next/link';
 
 export default function BackToHome() {
   return (
-    <div>
+    <div className="pt-5">
       <Link href="/">
-        <a>⏪ Back to home</a>
+        <a className="text-xl">🔙</a>
       </Link>
     </div>
   );
