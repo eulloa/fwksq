@@ -18,7 +18,7 @@ export default function Post({ postData }) {
         </article>
       </div>
     </Layout>
-  )
+  );
 }
 
 export async function getStaticPaths() {
@@ -26,8 +26,8 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: false
-  }
+    fallback: false,
+  };
 }
 
 export async function getStaticProps({ params }) {
@@ -35,7 +35,7 @@ export async function getStaticProps({ params }) {
 
   return {
     props: {
-      postData
-    }
-  }
+      postData,
+    },
+  };
 }

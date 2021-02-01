@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import About from '../components/about';
 import BlogPosts from '../components/blogPosts';
 import Layout from '../components/layout';
@@ -21,7 +21,7 @@ export default function Index({ posts }: Posts) {
 export async function getStaticProps() {
   return {
     props: {
-      posts: getSortedPostsData()
-    }
-  }
+      posts: getSortedPostsData(),
+    },
+  };
 }
