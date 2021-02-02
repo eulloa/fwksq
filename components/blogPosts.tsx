@@ -13,7 +13,7 @@ export default function BlogPosts({ posts }: Posts) {
               <div>
                 <h1 className="text-2xl font-bold text-center">{title}</h1>
                 <p className="text-sm font-light pb-5 text-center">{date}</p>
-                <p className="font-light">{summary}</p>
+                <p className="text-sm font-light">{summary}</p>
               </div>
             </li>
           </a>

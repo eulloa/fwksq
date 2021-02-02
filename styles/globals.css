@@ -22,6 +22,19 @@ a {
   margin-bottom: unset;
 }
 
+.search input {
+  height: 30px;
+}
+
+.search input[type='submit'] {
+  background: transparent;
+  width: 25px;
+}
+
+input:disabled {
+  opacity: 0.25;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
