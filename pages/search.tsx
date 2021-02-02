@@ -1,10 +1,15 @@
 import Layout from '../components/layout';
 import Link from 'next/link';
 import { getSearchedPosts } from '../lib/posts';
-import { Post } from '../types';
+import { Post, Posts } from '../types';
 import { useRouter } from 'next/router';
+import { GetServerSideProps } from 'next';
 
-export default function Search({ searchedPosts }: any) {
+interface SearchedPostProps {
+  searchedPosts: Posts;
+}
+
+export default function Search({ searchedPosts }: SearchedPostProps) {
   const router = useRouter();
   const searchedTerm = router?.query?.q;
 
@@ -43,7 +48,7 @@ export default function Search({ searchedPosts }: any) {
   );
 }
 
-export async function getServerSideProps({ query }: any) {
+export async function getServerSideProps({ query }: GetServerSideProps) {
   return {
     props: {
       searchedPosts: await getSearchedPosts(query.q),

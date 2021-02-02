@@ -1,10 +1,10 @@
-export type Post = {
+export interface Post {
   date: string;
   id: string;
   summary: string;
   title: string;
-};
+}
 
-export type Posts = {
+export interface Posts {
   posts?: Post[];
-};
+}
