@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Post, Posts } from '../types';
+import { Post, Posts } from '../types/types';
 
 export default function BlogPosts({ posts }: Posts) {
   if (!posts || !posts.length) return null;

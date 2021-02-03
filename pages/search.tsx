@@ -1,10 +1,16 @@
 import Layout from '../components/layout';
 import Link from 'next/link';
-import { getSearchedPosts } from '../lib/posts';
-import { Post } from '../types';
+import { getSearchedPosts } from '../lib/posts.js';
+import { Post } from '../types/types';
 import { useRouter } from 'next/router';
 
-export default function Search({ searchedPosts }: any) {
+interface SearchProps {
+  searchedPosts?: Post[];
+}
+
+export default function Search({
+  searchedPosts,
+}: SearchProps): React.ReactNode {
   const router = useRouter();
   const searchedTerm = router?.query?.q;
 

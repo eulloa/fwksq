@@ -1,4 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npx prettier --write .
+npx prettier --write . &&
+npx eslint . --ext .js --ext .ts --ext .jsx --ext .tsx &&
+npx next build

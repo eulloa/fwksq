@@ -3,7 +3,7 @@ import About from '../components/about';
 import BlogPosts from '../components/blogPosts';
 import Layout from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
-import { Posts } from '../types';
+import { Posts } from '../types/types';
 
 export default function Index({ posts }: Posts) {
   return (
