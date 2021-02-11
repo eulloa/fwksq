@@ -8,7 +8,7 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <article>
+      <article className="dark:text-white">
         <div>
           <h1 className="text-2xl font-bold text-center">{postData.title}</h1>
           <p className="text-sm font-light pb-5 text-center">{postData.date}</p>
