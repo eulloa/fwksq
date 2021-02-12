@@ -17,7 +17,7 @@ export default function Search({
   if (!searchedPosts || !searchedPosts.length) {
     return (
       <Layout>
-        <div className="text-center">
+        <div className="text-center dark:text-white">
           <h1 className="text-2xl font-bold">Oops!</h1>
           <p>
             {' '}
@@ -36,7 +36,7 @@ export default function Search({
           <Link href={`/posts/${id}`} key={`${date}-${title}`}>
             <a className="block">
               <li>
-                <div>
+                <div className="dark:text-white">
                   <h1 className="text-2xl font-bold text-center">{title}</h1>
                   <p className="text-sm font-light pb-5 text-center">{date}</p>
                 </div>

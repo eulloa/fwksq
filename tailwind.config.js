@@ -1,14 +1,30 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class',
   theme: {
     colors: {
-      offwhite: '#FEFBFB',
+      blue: '#031f30',
+      gray: colors.gray,
+      offwhite: '#fefbfb',
+      transparent: 'transparent',
+      white: colors.white,
     },
     extend: {},
   },
   variants: {
-    extend: {},
+    textColor: ['dark', 'responsive', 'hover', 'focus'],
+    backgroundColor: [
+      'responsive',
+      'hover',
+      'disabled',
+      'focus',
+      'odd',
+      'even',
+      'checked',
+      'dark',
+    ],
   },
   plugins: [],
 };

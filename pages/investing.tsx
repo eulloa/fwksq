@@ -3,7 +3,9 @@ import Layout from '../components/layout';
 export default function Investing(): React.ReactNode {
   return (
     <Layout>
-      <h1>Investing</h1>
+      <div className="dark:text-white">
+        <h1>Investing</h1>
+      </div>
     </Layout>
   );
 }

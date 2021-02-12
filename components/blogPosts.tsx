@@ -10,7 +10,7 @@ export default function BlogPosts({ posts }: Posts) {
         <Link href={`/posts/${id}`} key={`${date}-${title}`}>
           <a className="block">
             <li className="p-2" key={`${date}-${title}`}>
-              <div>
+              <div className="dark:text-white">
                 <h1 className="text-2xl font-bold text-center">{title}</h1>
                 <p className="text-sm font-light pb-5 text-center">{date}</p>
                 <p className="text-sm font-light">{summary}</p>
