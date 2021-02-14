@@ -3,4 +3,5 @@
 
 npx prettier --write . &&
 npx eslint . --ext .js --ext .ts --ext .jsx --ext .tsx &&
+npx cypress run &&
 npx next build
